@@ -1,0 +1,115 @@
+% ------------------------------------------------------------------------
+% Template for [Your Document Type] based on the 
+% DIRECTORATE OF RESEARCH AND GRADUATE TRAINING
+% GUIDELINES FOR THE FORMAT OF RESEARCH PROPOSALS,
+% RESEARCH REPORTS, THESIS AND DISSERTATIONS
+% Document: https://rgt.mak.ac.ug/wp-content/uploads/2024/09/Research-Proposal-Thesis-Format-Ver-4-April-2011.pdf
+% ------------------------------------------------------------------------
+
+\documentclass[12pt]{report}
+
+\usepackage{../Common/articlePreamble}
+
+
+\begin{document}
+
+
+% titlepage
+\input{../Common/sections/0_titlePage.tex}
+
+% =======================================================================
+
+\clearpage
+\pagenumbering{roman}
+
+\addcontentsline{toc}{section}{Declaration}
+\cleardoublepage
+\input{../Common/sections/Preamble/Declaration.tex}
+\pagebreak
+
+\addcontentsline{toc}{section}{Acknowledgement}
+\cleardoublepage
+\input{../Common/sections/Preamble/Acknowledgement.tex}
+\pagebreak
+
+\tableofcontents
+\pagebreak
+
+\addcontentsline{toc}{section}{List Of Tables}
+\cleardoublepage
+\listoftables
+\pagebreak
+
+\addcontentsline{toc}{section}{List Of Figures}
+\cleardoublepage
+\listoffigures % This generates the list of figures
+\pagebreak
+
+
+\cleardoublepage
+\printglossary[title=Operational Definitions] % Prints glossary without modifying TOC
+\pagebreak
+
+
+\cleardoublepage
+\printglossary[type=\acronymtype, title=Abbreviations] % Prints glossary with title "Abbreviations"
+\pagebreak
+
+\addcontentsline{toc}{section}{Abstract}
+\cleardoublepage
+\input{../Common/sections/Preamble/Abstract.tex}
+
+
+% =======================================================================
+\clearpage
+\pagenumbering{arabic}
+
+
+\pagebreak
+\input{../Common/sections/1_background.tex}
+\input{../Common/sections/2_problem_statement.tex}
+\input{../Common/sections/3_objectives.tex}
+\input{../Common/sections/4_conceptual_framework.tex}
+
+
+\pagebreak
+\input{../Common/sections/5_literature_review.tex}
+
+
+\pagebreak
+\input{../Common/sections/6_methodology.tex}
+
+
+\pagebreak
+\input{../Common/sections/11_Considerations.tex}
+
+
+\pagebreak
+\input{../Common/sections/12_Limitations.tex}
+
+\pagebreak
+\cleardoublepage
+\addcontentsline{toc}{section}{\numberline{}References}
+\printbibliography
+
+\cleardoublepage
+
+\appendix
+
+\addcontentsline{toc}{section}{\numberline{}Appendix}
+\cleardoublepage
+
+\input{../4_Planning/timeline/Work plan.tex}
+
+\input{../4_Planning/budget/Budget.tex}
+
+\input{../2_Data/1_Collection/Tools/questionnaire.tex}
+
+\input{../2_Data/1_Collection/Tools/Consent Form.tex}
+
+\input{../2_Data/1_Collection/Authourization/Authourization.tex}
+
+
+
+
+\end{document}

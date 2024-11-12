@@ -1,0 +1,88 @@
+
+
+\begin{figure}[htbp]
+  \begin{center}
+    \begin{ganttchart}[
+      y unit title=0.4cm,
+      y unit chart=0.5cm,
+      vgrid,
+      hgrid, 
+      title label anchor/.style={below=-1.6ex},
+      title left shift=.05,
+      title right shift=-.05,
+      title height=1,
+      progress label text={},
+      bar height=0.7,
+      group right shift=0,
+      group top shift=.6,
+      group height=.3
+      ]{1}{24}
+
+      % labels
+      \gantttitle{2024}{24} \\
+      \gantttitle{May}{4}
+      \gantttitle{June}{4}
+      \gantttitle{July}{4}
+      \gantttitle{August}{4} 
+      \gantttitle{September }{4} 
+      \gantttitle{October }{4} \\
+
+      % tasks
+    \ganttbar[progress=0]{PICK TOPIC}{1}{1}	\\
+    \ganttbar[progress=0]{topic samples}{1}{1}\\
+    \ganttbar[progress=0]{Final Topic}{1}{1}\\
+    
+    \ganttbar[progress=0]{WRITE PROPOOSAL}{2}{5}\\
+    \ganttmilestone{SUBMIT PROPOSAL}{5}\\
+
+    
+    \ganttbar[progress=0]{APPROVAL }{5}{6}\\
+
+    
+    \ganttmilestone{GO AHEAD}{6} \\ 
+    \ganttbar[progress=0]{GO AHEAD}{7}{9}\\
+    % \ganttbar[progress=0]{messaging consent forms}	10 days
+    \ganttbar[progress=0]{collect data}{7}{7}\\
+    \ganttbar[progress=0]{analysis data}{8}{8}\\
+    \ganttbar[progress=0]{1st draft}{9}{9}\\
+
+
+    \ganttmilestone{WRITE REPORT}{9} \\
+    \ganttbar[progress=0]{WRITE REPORT}{10}{15}\\
+    % \ganttbar[progress=0]{CHAPTER ONE	1 day
+    % \ganttbar[progress=0]{CHAPTER TWO	5 days
+    % \ganttbar[progress=0]{CHAPTER THREE	1 day
+    % \ganttbar[progress=0]{CHAPTER FOUR: RESULTS	3 days
+    % \ganttbar[progress=0]{CHAPTER FIVE: DISCUSSION	2 days
+    % \ganttbar[progress=0]{CHAPTER SIX: CONCLUSION AND RECOMMENDATIONS	4 days
+    % \ganttbar[progress=0]{APPENDIX	8 days
+    % \ganttbar[progress=0]{PREAMBLE	4.4 days
+
+    \ganttbar[progress=0]{SUBMIT REPORT}{16}{19}\\
+    \ganttbar[progress=0]{1st final draft}{16}{16}\\
+    \ganttbar[progress=0]{2nd final draft}{17}{17}\\
+    \ganttbar[progress=0]{Report peer review 1}{18}{18}\\
+    % \ganttbar[progress=0]{Report peer review 2	6.67 days
+    \ganttbar[progress=0]{submission}{19}{19}\\
+    \ganttmilestone{SUBMIT REPORT}{19} \\
+    
+    \ganttbar[progress=0]{DISSEMINATION}{20}{24}\\
+    \ganttbar[progress=0]{seminar}{21}{22}\\
+    \ganttbar[progress=0]{university}{22}{23}\\
+    \ganttmilestone{RESEARCH END}{24} \\
+
+
+      % relations 
+      % \ganttlink{elem0}{elem1} 
+      % \ganttlink{elem0}{elem3} 
+      % \ganttlink{elem1}{elem2} 
+      % \ganttlink{elem3}{elem4} 
+      % \ganttlink{elem1}{elem5} 
+      % \ganttlink{elem3}{elem5} 
+      % \ganttlink{elem2}{elem6} 
+      % \ganttlink{elem3}{elem6} 
+      % \ganttlink{elem5}{elem7} 
+    \end{ganttchart}
+  \end{center}
+  \caption{Program Timeline For The Project}
+\end{figure}

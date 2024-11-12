@@ -1,0 +1,24 @@
+\begin{figure}[htbp]
+    \centering
+    \begin{tikzpicture}[node distance=3cm, auto, align=center]
+        % Nodes
+        \node[rectangle, draw, rounded corners, text width=5cm] (demographic) {Demographic Factors \\ (Age, Gender, History, Region)};
+        
+        \node[rectangle, draw, rounded corners, below=6.6cm of demographic, text width=5cm] (environmental) {Environmental Factors \\ (Urbanization)};
+        
+        \node[rectangle, draw, rounded corners, right=4cm of demographic, text width=4cm] (prevalence) {Prevalence of };
+        \node[rectangle, draw, rounded corners, below=2cm of prevalence, text width=4cm] (types) {Types of };
+        \node[rectangle, draw, rounded corners, below=2cm of types, text width=4cm] (severity) {Severity of };
+        
+        % Arrows
+        \draw[->, thick] (demographic) -- (prevalence);
+        \draw[->, thick] (demographic) -- (types);
+        \draw[->, thick] (demographic) -- (severity);
+        \draw[->, thick] (environmental) -- (prevalence);
+        \draw[->, thick] (environmental) -- (types);
+        \draw[->, thick] (environmental) -- (severity);
+    \end{tikzpicture}
+    \caption{Conceptual framework diagram for }
+    \label{fig:conceptual_framework}
+\end{figure}
+

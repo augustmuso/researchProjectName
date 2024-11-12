@@ -1,0 +1,120 @@
+\documentclass[
+                aspectratio=169, 
+                14pt,
+                % notes,
+                % notes=only,
+                ]{beamer}
+
+
+
+\usepackage{../../Common/slidePreamble} % include your preamble.sty file
+
+
+% Usage example
+\title[Short Form Title]{
+  Long Form Title
+  }
+% \subtitle{A Study Conducted in 2023}
+
+\author[author 1 \and author 2]{ author 1 \and author 2}
+
+% \institute{Makerere University}
+
+\date{\footnotesize Host Of Conference\\ Anual General Meeting\\ \today}
+
+
+
+
+
+\begin{document}
+
+\begin{frame}
+  % [shrink=20]
+  \titlepage
+\end{frame}
+
+
+
+% \begin{frame}[shrink=20]{Table Of Contents}
+
+%     % \footnotesize
+%     % \scriptsize
+%     % \tiny
+%     % \small
+%     % \begin{multicols}{2}
+%     \tableofcontents
+%     % \end{multicols}
+
+% \end{frame}
+
+\begin{frame}[shrink=40]{Abbreviations \& Operational Definitions}
+
+    % \footnotesize
+    % \scriptsize
+    % \tiny
+    % \small
+    \begin{multicols}{2}
+    \printglossary[type=\acronymtype, title=Keywords]
+
+    \printglossary[title=Operational Definitions]
+
+    \end{multicols}
+
+\end{frame}
+
+
+
+\input{../../Common/slidesSections/intro.tex}
+\note[itemize]{
+\item point 1
+\item point 2
+}
+
+\input{../../Common/slidesSections/LiteratureReview.tex}
+\note[itemize]{
+\item point 1
+\item point 2
+}
+
+\input{../../Common/slidesSections/Methods.tex}
+
+% \input{../../Common/slidesSections/Results.tex}
+% \note[itemize]{
+% \item point 1
+% \item point 2
+% }
+
+% \input{../../Common/slidesSections/Discussion.tex}
+
+
+% \input{../../Common/slidesSections/Conclusion}
+% \note[itemize]{
+% \item point 1
+% \item point 2
+% }
+
+\begin{frame}[shrink=30]{References}
+
+    % \footnotesize
+    % \scriptsize
+    % \tiny
+    
+    \printbibliography
+    
+    % \begin{multicols}{2}
+    % \printbibliography
+    % \end{multicols}
+
+\end{frame}
+
+% \input{../../Common/slidesSections/End Sessions/End Sessions}
+% Add more sections and subsections as needed
+
+
+% \input{../../Common/slidesSections/End Sessions/Standards.tex}
+
+
+% \input{../../Common/slidesSections/End Sessions/OSH.tex}
+
+
+\end{document}
